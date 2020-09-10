@@ -101,3 +101,10 @@ yarn-debug.log*
 # google credentials
 google-auth-cred.json
 google-drive-cred.json
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
