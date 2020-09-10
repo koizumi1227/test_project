@@ -9,6 +9,7 @@ set :deploy_to, "/var/www/test_project"
 set :ssh_options, keys: '~/.ssh/id_rsa'
 set :rbenv_path, '/usr/local/rbenv'
 set :keep_releases, 5
+set :bundle_without, %w(staging development test).join(' ')
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
