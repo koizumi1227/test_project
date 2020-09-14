@@ -7,6 +7,8 @@ set :branch, 'master'
 set :user, 'app'
 set :deploy_to, "/var/www/test_project"
 set :ssh_options, keys: '~/.ssh/id_rsa'
+set :rbenv_type, :user
+set :rbenv_ruby, File.read('.ruby-version').strip
 set :rbenv_path, '/usr/local/rbenv'
 set :keep_releases, 5
 set :bundle_without, %w(staging development test).join(' ')
